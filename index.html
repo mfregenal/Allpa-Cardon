@@ -29,7 +29,7 @@
         </label>
 
         <!-- MENU -->
-        <ul class="hidden peer-checked:flex lg:flex flex-col lg:flex-row max-lg:absolute max-lg:top-20 max-lg:w-full left-0 text-center py-1 max-lg:border-t-2 max-lg:border-[#004f5642] lg:gap-4 ">
+        <ul class="hidden max-lg:bg-[#fef6e4] max-lg:bg-opacity-90 peer-checked:flex lg:flex flex-col lg:flex-row max-lg:absolute max-lg:top-20 max-lg:w-full left-0 text-center py-1 max-lg:border-t-2 max-lg:border-[#004f5642] lg:gap-4 ">
           <li>
             <a href="./index.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Inicio</a>
           </li>
@@ -57,7 +57,7 @@
   <main class="font-[Open Sans] max-md:text-sm bg-[#fef6e4]">
 
     <!-- SECCIÓN ENCABEZADO -->
-    <section class="flex justify-center items-center bg-[url('./img/portada.png')] h-[30rem] bg-cover mt-24">
+    <section class="flex justify-center items-center bg-[url('./img/portada.png')] h-[30rem] bg-cover mt-20 lg:mt-24">
       <div class="flex flex-col items-center">
         <p class="bg-[#004f56] text-white text-center p-6 max-w-xl max-md:max-w-xs rounded-xl">
           Somos una ONG que lucha contra la contaminación minera en Catamarca, enfocándose especialmente en la protección de la flora fauna y las comunidades afectadas por esta misma.
@@ -71,22 +71,22 @@
     </section>
 
     <!-- SECCIÓN GALERÍA DE IMÁGENES - 1 -->
-    <section class="grid grid-cols-3 text-white">
-      <div class="h-96 bg-[url('./img/inicio/proyectos.png')] bg-cover bg-center">
+    <section class="grid grid-cols-1 md:grid-cols-3 text-white">
+      <div class="h-72 md:h-96 bg-[url('./img/inicio/proyectos.png')] bg-cover bg-center">
         <div class="bg-black/20 w-full h-full flex flex-col justify-center text-center">
           <p class="text-4xl font-bold">120</p>
           <p class="text-xl mt-2">PROYECTOS</p>
         </div>
       </div>
 
-      <div class="h-96 bg-[url('./img/inicio/iniciativas.png')] bg-cover bg-center">
+      <div class="h-72 md:h-96 bg-[url('./img/inicio/iniciativas.png')] bg-cover bg-center">
         <div class="bg-black/20 w-full h-full flex flex-col justify-center text-center">
           <p class="text-4xl font-bold">50</p>
           <p class="text-xl mt-2">INICIATIVAS</p>
         </div>
       </div>
 
-      <div class="h-96 bg-[url('./img/inicio/voluntarios.png')] bg-cover bg-center">
+      <div class="h-72 md:h-96 bg-[url('./img/inicio/voluntarios.png')] bg-cover bg-center">
         <div class="bg-black/20 w-full h-full flex flex-col justify-center text-center">
           <p class="text-4xl font-bold">200</p>
           <p class="text-xl mt-2">VOLUNTARIOS</p>
@@ -95,18 +95,18 @@
     </section>
 
     <!-- SECCIÓN SOBRE NOSOTROS -->
-    <section class="flex flex-col justify-center items-center p-14 mx-auto w-3/5 border-b-2 border-[#004f56]">
+    <section class="flex flex-col justify-center items-center p-6 md:p-14 mx-auto lg:w-3/5 border-b-2 border-[#004f56]">
 
       <!-- SOBRE NOSOTROS -->
       <div class="text-center">
-        <h2 class="text-4xl text-[#004f56] font-semibold font-[Poppins]">Sobre Nosotros</h2>
-        <p class="mt-4 mb-12">
+        <h2 class="text-3xl md:text-4xl text-[#004f56] font-semibold font-[Poppins]">Sobre Nosotros</h2>
+        <p class="mt-4 mb-6 md:mb-12">
           En Allpa Cardón luchamos contra la contaminación minera en Catamarca, protegiendo la flora, la fauna y las comunidades afectadas. Buscamos crear conciencia, fomentar el compromiso ambiental y promover la participación ciudadana.
         </p>
       </div>
 
       <!-- BLOQUE 1 -->
-      <div class="grid grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
         <div class="bg-white p-4 rounded-lg shadow-lg shadow-gray-300">
           <h3 class="text-xl text-[#004f56] mb-4 font-semibold font-[Poppins]">Misión</h3>
           <p>
@@ -138,9 +138,9 @@
     </section>
 
     <!-- SECCIÓN GALERÍA DE IMÁGENES - 2 -->
-    <section class="flex flex-col justify-center items-center p-14 mx-auto w-3/5">
-      <h2 class="text-4xl text-[$004f56] font-semibold font-[Poppins] mb-12 text-[#004f56]">Galería de Imágenes</h2>
-      <div class="grid grid-rows-2 grid-cols-3 gap-8">
+    <section class="flex flex-col justify-center items-center p-6 md:p-14 mx-auto lg:w-3/5">
+      <h2 class="text-3xl md:text-4xl text-[$004f56] font-semibold font-[Poppins] mb-6 md:mb-12 text-[#004f56]">Galería de Imágenes</h2>
+      <div class="grid md:grid-rows-2 md:grid-cols-3 gap-4 md:gap-8">
         <img src="./img/galeria/galeria_1.png" alt="img_galeria_1" class="w-80 h-72 rounded-lg shadow-lg shadow-gray-400">
         <img src="./img/galeria/galeria_2.png" alt="img_galeria_2" class="w-80 h-72 rounded-lg shadow-lg shadow-gray-400">
         <img src="./img/galeria/galeria_3.png" alt="img_galeria_3" class="w-80 h-72 rounded-lg shadow-lg shadow-gray-400">
