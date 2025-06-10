@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allpa Cardón</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="font-[Poppins] text-[#004f56] text-lg lg:text-xl">
+    <nav class="flex justify-between items-center px-5 lg:px-16 py-2 bg-[#fef6e4] fixed w-full top-0 shadow-md bg-opacity-90 shadow-gray-500">
+
+      <!-- LOGO -->
+      <div>
+        <img src="./img/logo.png" alt="logo_allpa_cardon" class="rounded-full w-20 max-lg:w-16">
+      </div>
+
+      <!-- MENU - ESCRITORIO Y MOBILE -->
+      <div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <label for="menu-toggle" class="flex flex-col gap-1 lg:hidden">
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+        </label>
+
+        <!-- MENU -->
+        <ul class="hidden max-lg:bg-[#fef6e4] max-lg:bg-opacity-90 peer-checked:flex lg:flex flex-col lg:flex-row max-lg:absolute max-lg:top-20 max-lg:w-full left-0 text-center py-1 max-lg:border-t-2 max-lg:border-[#004f5642] lg:gap-4 ">
+          <li>
+            <a href="./index.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Inicio</a>
+          </li>
+          <li>
+            <a href="./seccion_proyecto.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Proyectos</a>
+          </li>
+          <li>
+            <a href="./seccion_iniciativa.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Iniciativas</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Voluntarios</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Donaciones</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CUERPO DE LA PAGINA -->
+  <main class="font-[Open Sans] max-md:text-sm bg-[#fef6e4] text-white">
+
+    <!-- SECCIÓN ENCABEZADO -->
+    <section class="flex justify-center mt-20 lg:mt-24">
+      <div class="flex flex-col items-center justify-center bg-[url('./img/encabezado.png')] w-full h-96 bg-cover bg-center">
+
+        <!-- TEXTO ENCABEZADO -->
+        <h1 class="text-4xl md:text-8xl font-[Poppins]">PROYECTOS</h1>
+        <p class="md:text-xl mt-4 mb-4">Nuestros proyectos ambientales en Catamarca</p>
+
+        <!-- BARRA DE BÚSQUEDA - ESCRITORIO -->
+        <form action="#" class="flex max-md:flex-col items-center justify-center gap-2 mt-4 max-md:hidden">
+          <label for="buscar" class="font-semibold">Buscar proyecto:</label>
+          <input type="text" id="buscar" name="buscar" class="border border-white rounded-md px-4 py-1 w-80 focus:outline-none focus:ring-2 focus:ring-[#006d77] placeholder:text-white bg-transparent" placeholder="Escribí el nombre del proyecto">
+            <button type="submit" class=" px-2 py-1 rounded-md hover:bg-[#006d77]">
+              <img src="./img/icono_lupa.png" alt="icono_lupa" class="w-6 h-6">
+            </button>
+        </form>
+
+        <!-- BARRA BÚSQUEDA - MOBILE -->
+        <form action="#" class="flex max-md:flex-col items-center justify-center gap-2 mt-4 md:hidden">
+          <label for="buscar" class="font-semibold">Buscar proyecto:</label>
+          <input type="text" id="buscar" name="buscar"
+            class="border border-white rounded-md px-4 py-1 w-80 focus:outline-none focus:ring-2 focus:ring-[#006d77] placeholder:text-white bg-transparent"
+            placeholder="Escribí el nombre del proyecto ">
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS -->
+    <section class="w-11/12 lg:w-3/5 grid md:grid-cols-2 md:grid-rows-2 mx-auto gap-8 py-6">
+
+      <!-- PROYECTO 1 -->
+      <article class="flex flex-col bg-[#004f56] rounded-xl">
+        <div class="w-full h-72">
+          <img src="./img/proyectos/proyecto_1.png" alt="proyecto_1" class="w-full h-full rounded-t-xl">
+        </div>
+
+        <div class="flex flex-col justify-between flex-grow px-6 mt-4 mb-6">
+          <div class="flex flex-col items-center justify-center text-center">
+            <h2 class="text-xl lg:text-3xl font-[Poppins]">REFORESTACIÓN EN LA CUENCA DEL RÍO DEL VALLE</h2>
+            <ul class="text-justify grid grid-rows-4 gap-2">
+              <li><strong>Objetivo:</strong> Plantar 3.000 árboles nativos en zonas afectadas por la actividad minera.</li>
+              <li><strong>Impacto:</strong> Restauración del hábitat, prevención de erosión y mejora de suelos.</li>
+              <li><strong>Ubicación:</strong> Ambato, Catamarca.</li>
+              <li><strong>Meta:</strong> $250.000 - <strong>Duración:</strong> 6 meses</li>
+            </ul>
+          </div>
+
+          <!-- BOTÓN VER MAS -->
+          <div class="flex justify-center mt-2">
+            <a href="./proyecto_1.html">
+              <button class="bg-white hover:bg-[#fef6e4] text-[#006d77] font-bold py-2 px-4 rounded-lg transition">Ver Mas</button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROYECTO 2 -->
+      <article class="flex flex-col bg-[#004f56] rounded-xl">
+        <div class="w-full h-72">
+          <img src="./img/proyectos/proyecto_2.png" alt="proyecto_2" class="w-full h-full rounded-t-xl">
+        </div>
+
+        <div class="flex flex-col justify-between flex-grow px-6 mt-4 mb-6">
+          <div class="flex flex-col items-center justify-center text-center">
+            <h2 class="text-xl lg:text-3xl font-[Poppins]">EDUCACIÓN AMBIENTAL EN ESCUELAS RURALES</h2>
+            <ul class="text-justify grid grid-rows-4 gap-2">
+              <li><strong>Objetivo:</strong> Capacitar a estudiantes en prácticas ecológicas y conservación.</li>
+              <li><strong>Impacto:</strong> Mayor conciencia ambiental en comunidades rurales.</li>
+              <li><strong>Ubicación:</strong> Antofagasta de la Sierra, Catamarca.</li>
+              <li><strong>Meta:</strong> $180.000 -  <strong>Duración:</strong> 4 meses</li>
+            </ul>
+          </div>
+
+          <!-- BOTÓN VER MAS -->
+          <div class="flex justify-center mt-2">
+            <a href="./pag_construccion.html">
+              <button class="bg-white hover:bg-[#fef6e4] text-[#006d77] font-bold py-2 px-4 rounded-lg transition">Ver Mas</button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROYECTO 3 -->
+      <article class="flex flex-col bg-[#004f56] rounded-xl">
+        <div class="w-full h-72">
+          <img src="./img/proyectos/proyecto_3.png" alt="proyecto_3" class="w-full h-full rounded-t-xl">
+        </div>
+
+        <div class="flex flex-col justify-between flex-grow px-6 mt-4 mb-6">
+          <div class="flex flex-col items-center justify-center text-center">
+            <h2 class="text-xl lg:text-3xl font-[Poppins]">CENTRO DE RESCATE Y REHABILITACIÓN DE FAUNA SILVESTRE</h2>
+            <ul class="text-justify grid grid-rows-4 gap-2">
+              <li><strong>Objetivo:</strong> Brindar atención veterinaria a animales afectados por actividades mineras.</li>
+              <li><strong>Impacto:</strong> Conservación de fauna nativa y recuperación de especies.</li>
+              <li><strong>Ubicación:</strong> Andalgalá, Catamarca.</li>
+              <li><strong>Meta:</strong> $320.000 -  <strong>Duración:</strong> Permanente</li>
+            </ul>
+          </div>
+
+          <!-- BOTÓN VER MAS -->
+          <div class="flex justify-center mt-2">
+            <a href="./pag_construccion.html">
+              <button class="bg-white hover:bg-[#fef6e4] text-[#006d77] font-bold py-2 px-4 rounded-lg transition">Ver Mas</button>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROYECTO 4 -->
+      <article class="flex flex-col bg-[#004f56] rounded-xl">
+        <div class="w-full h-72">
+          <img src="./img/proyectos/proyecto_4.png" alt="proyecto_4" class="w-full h-full rounded-t-xl">
+        </div>
+
+        <div class="flex flex-col justify-between flex-grow px-6 mt-4 mb-6">
+          <div class="flex flex-col items-center justify-center text-center">
+            <h2 class="text-xl lg:text-3xl font-[Poppins]">PROTECCIÓN DE LAGUNAS ALTOANDINAS EN ÁREAS MINERAS</h2>
+            <ul class="text-justify grid grid-rows-4 gap-2">
+              <li><strong>Objetivo:</strong> Proteger las lagunas altoandinas de Catamarca y sus ecosistemas hídricos de la extracción de litio</li>
+              <li><strong>Impacto:</strong> Detención temprana de contaminación por salmuera o metales pesados.</li>
+              <li><strong>Ubicación:</strong> Región de Fiambalá y zona de influencia del Salar de Tres Quebradas y otras lagunas cercanas.</li>
+              <li><strong>Meta:</strong> $370.000 -   <strong>Duración:</strong> 8 meses</li>
+            </ul>
+          </div>
+
+          <!-- BOTÓN VER MAS -->
+          <div class="flex justify-center mt-2">
+            <a href="./pag_construccion.html">
+              <button class="bg-white hover:bg-[#fef6e4] text-[#006d77] font-bold py-2 px-4 rounded-lg transition">Ver Mas</button>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- PIE DE PAGINA -->
+  <footer class="py-2 bg-[#004f56] text-white font-[Poppins] flex flex-col">
+    <div class="grid grid-cols-2">
+
+      <!-- CONTACTO (Izquierda) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Contactos</h4>
+        <div>
+          <p class="max-md:text-sm">📞+54 383 555 1234</p>
+          <a href="mailto:contacto@alpha.org" class="hover:text-teal-500 transition-transform max-md:text-sm">📧 contacto@allpha.org</a>
+        </div>
+      </div>
+
+      <!-- REDES SOCIALES (Derecha) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Seguinos</h4>
+        <div class="flex md:justify-end gap-2 text-2xl">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="./img/iconos_redes/facebook.png" alt="Facebook" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="./img/iconos_redes/instagram.png" alt="Instagram" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://wa.me/543835551234" target="_blank" aria-label="WhatsApp">
+            <img src="./img/iconos_redes/whatsapp.png" alt="WhatsApp" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="mt-2 pt-1 text-center text-sm max-md:text-xs">
+      <p>© 2025 ONG Allpa Cardón | Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
