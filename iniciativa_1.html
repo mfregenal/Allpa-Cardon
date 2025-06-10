@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allpa Cardón</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="font-[Poppins] text-[#004f56] text-lg lg:text-xl">
+    <nav class="flex justify-between items-center px-5 lg:px-16 py-2 bg-[#fef6e4] fixed w-full top-0 shadow-md bg-opacity-90 shadow-gray-500">
+
+      <!-- LOGO -->
+      <div>
+        <img src="./img/logo.png" alt="logo_allpa_cardon" class="rounded-full w-20 max-lg:w-16">
+      </div>
+
+      <!-- MENU - ESCRITORIO Y MOBILE -->
+      <div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <label for="menu-toggle" class="flex flex-col gap-1 lg:hidden">
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+        </label>
+
+        <!-- MENU -->
+        <ul class="hidden max-lg:bg-[#fef6e4] max-lg:bg-opacity-90 peer-checked:flex lg:flex flex-col lg:flex-row max-lg:absolute max-lg:top-20 max-lg:w-full left-0 text-center py-1 max-lg:border-t-2 max-lg:border-[#004f5642] lg:gap-4 ">
+          <li>
+            <a href="./index.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Inicio</a>
+          </li>
+          <li>
+            <a href="./seccion_proyecto.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Proyectos</a>
+          </li>
+          <li>
+            <a href="./seccion_iniciativa.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Iniciativas</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Voluntarios</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Donaciones</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CUERPO DE LA PAGINA -->
+  <main class="font-[Open Sans] max-md:text-sm bg-[#fef6e4] text-white">
+
+    <!-- SECCIÓN ENCABEZADO -->
+    <section class="flex justify-center items-center bg-[url('./img/iniciativas/iniciativa_1.png')] h-[30rem] bg-cover bg-center mt-20 lg:mt-24">
+      <div class="flex flex-col items-center">
+        <h1 class="text-4xl lg:text-8xl text-center font-[Poppins] mb-6">AGUA PARA TODOS</h1>
+        <a
+          href="./pag_construccion.html"
+          class="bg-[#004f56] hover:bg-teal-600 hover:border-2 hover:border-teal-700 font-semibold py-2 px-6 rounded-xl transition inline-block mt-6">
+            Quiero donar
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: CUERPO DE LA INICIATIVA -->
+    <section class="flex flex-col items-center text-justify gap-6 py-6">
+      <div class="bg-[#004f56] py-4 px-8 w-1/2 max-lg:w-4/5 rounded-xl shadow-lg shadow-gray-400">
+        <h2 class="text-3xl lg:text-4xl text-center font-semibold font-[Poppins] mb-4">Un recurso vital bajo presión</h2>
+        <p>
+          El uso intensivo de agua por parte de las empresas mineras representa una de las principales amenazas para las fuentes hídricas de Catamarca. Ríos como el Río del Valle y arroyos ubicados en zonas sensibles como Antofagasta de la Sierra están siendo afectados por la extracción desmedida de este recurso vital. Estas aguas no solo sostienen los ecosistemas locales, sino que también son fundamentales para la vida de las comunidades que habitan en estas regiones. La disminución del caudal, la contaminación y la alteración del equilibrio natural comprometen tanto la biodiversidad como las prácticas ancestrales de cultivo y pastoreo que dependen del agua pura y disponible. Esta situación exige una mirada crítica y acciones urgentes para garantizar el derecho al agua de las generaciones presentes y futuras.
+        </p>
+      </div>
+
+      <div class="bg-[#004f56] py-4 px-8 w-1/2 max-lg:w-4/5 rounded-xl shadow-lg shadow-gray-400">
+        <h2 class="text-3xl lg:text-4xl text-center font-semibold font-[Poppins] mb-4">¿Qué pasa con el agua?</h2>
+        <p>
+          La minería consume millones de litros al día, mientras pobladores de zonas como Antofagasta de la Sierra tienen acceso limitado a agua limpia. En muchos casos, los ríos bajan contaminados con metales como arsénico y plomo.
+          Lo que hacemos:
+        </p>
+        <p>Acciones del proyecto:</p>
+        <ul class="pl-20 mt-2 max-md:pl-5 max-lg:pl-10">
+          <li class="list-disc pl-1">
+            Instalamos medidores comunitarios de caudal y calidad.
+          </li>
+          <li class="list-disc pl-1">
+            Publicamos reportes en lenguaje claro.
+          </li>
+          <li class="list-disc pl-1">
+            Exigimos a las empresas el cumplimiento del derecho al agua.
+          </li>
+          <li class="list-disc pl-1">
+            Promovemos la cosecha de agua de lluvia.
+          </li>
+        </ul>
+      </div>
+      
+      <div class="bg-[#004f56] py-4 px-8 w-1/2 max-lg:w-4/5 rounded-xl shadow-lg shadow-gray-400">
+        <h2 class="text-3xl lg:text-4xl text-center font-semibold font-[Poppins] mb-4">¿Por qué donar?</h2>
+        <p>
+          Con tu aporte, no solo compramos un kit de análisis, le damos a una familia la prueba que necesita para proteger la salud de sus hijos. No solo sostenemos un monitoreo, generamos la evidencia para que la justicia actúe. Gracias a ti, las comunidades rurales no están solas en su lucha por el agua.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PAGINA -->
+  <footer class="py-2 bg-[#004f56] text-white font-[Poppins] flex flex-col">
+    <div class="grid grid-cols-2">
+
+      <!-- CONTACTO (Izquierda) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Contactos</h4>
+        <div>
+          <p class="max-md:text-sm">📞+54 383 555 1234</p>
+          <a href="mailto:contacto@alpha.org" class="hover:text-teal-500 transition-transform max-md:text-sm">📧 contacto@allpha.org</a>
+        </div>
+      </div>
+
+      <!-- REDES SOCIALES (Derecha) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Seguinos</h4>
+        <div class="flex md:justify-end gap-2 text-2xl">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="./img/iconos_redes/facebook.png" alt="Facebook" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="./img/iconos_redes/instagram.png" alt="Instagram" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://wa.me/543835551234" target="_blank" aria-label="WhatsApp">
+            <img src="./img/iconos_redes/whatsapp.png" alt="WhatsApp" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="mt-2 pt-1 text-center text-sm max-md:text-xs">
+      <p>© 2025 ONG Allpa Cardón | Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allpa Cardón</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="font-[Poppins] text-[#004f56] text-lg lg:text-xl">
+    <nav class="flex justify-between items-center px-5 lg:px-16 py-2 bg-[#fef6e4] fixed w-full top-0 shadow-md bg-opacity-90 shadow-gray-500">
+
+      <!-- LOGO -->
+      <div>
+        <img src="./img/logo.png" alt="logo_allpa_cardon" class="rounded-full w-20 max-lg:w-16">
+      </div>
+
+      <!-- MENU - ESCRITORIO Y MOBILE -->
+      <div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <label for="menu-toggle" class="flex flex-col gap-1 lg:hidden">
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+        </label>
+
+        <!-- MENU -->
+        <ul class="hidden max-lg:bg-[#fef6e4] max-lg:bg-opacity-90 peer-checked:flex lg:flex flex-col lg:flex-row max-lg:absolute max-lg:top-20 max-lg:w-full left-0 text-center py-1 max-lg:border-t-2 max-lg:border-[#004f5642] lg:gap-4 ">
+          <li>
+            <a href="./index.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Inicio</a>
+          </li>
+          <li>
+            <a href="./seccion_proyecto.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Proyectos</a>
+          </li>
+          <li>
+            <a href="./seccion_iniciativa.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Iniciativas</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Voluntarios</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Donaciones</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CUERPO DE LA PAGINA -->
+  <main class="font-[Open Sans] max-md:text-sm bg-[#fef6e4] text-white">
+
+    <!-- SECCIÓN ENCABEZADO -->
+    <section class="flex justify-center items-center bg-[url('./img/proyectos/proyecto_5.png')] h-[30rem] bg-cover bg-center mt-20 lg:mt-24">
+      <div class="flex flex-col items-center">
+        <h1 class="text-4xl lg:text-8xl text-center font-[Poppins] mb-6">REFORESTACIÓN DEL <span class="block">RÍO DEL VALLE</span></h1>
+        <a
+          href="./pag_construccion.html"
+          class="bg-[#004f56] hover:bg-teal-600 hover:border-2 hover:border-teal-700 font-semibold py-2 px-6 rounded-xl transition inline-block mt-6">
+            Quiero donar
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: CUERPO DE LA INICIATIVA -->
+    <section class="flex flex-col items-center text-justify gap-6 py-6">
+      <div class="bg-[#004f56] py-4 px-8 w-1/2 max-lg:w-4/5 rounded-xl shadow-lg shadow-gray-400">
+        <h2 class="text-3xl lg:text-4xl text-center font-semibold font-[Poppins] mb-4">Un valle que nos necesita</h2>
+        <p>
+          La deforestación y la actividad minera han provocado un grave deterioro ambiental en la cuenca del Río del Valle, una de las regiones más sensibles del departamento Ambato, en Catamarca. La pérdida de cobertura vegetal no solo altera el paisaje, sino que acelera procesos como la erosión del suelo, la desertificación y la pérdida de biodiversidad. Zonas que antes albergaban especies nativas hoy muestran signos alarmantes de degradación: suelos expuestos, cauces inestables y una marcada disminución de servicios ecosistémicos esenciales como la retención de agua y la regulación del clima local.
+          La situación compromete directamente a comunidades rurales que dependen de estos recursos para actividades como la agricultura, el pastoreo y la recolección de frutos autóctonos. Frente a esta realidad, surge la necesidad de actuar con urgencia, restaurando el equilibrio natural mediante prácticas de reforestación basadas en especies nativas, sostenidas en el tiempo y con participación comunitaria.
+        </p>
+      </div>
+
+      <div class="bg-[#004f56] py-4 px-8 w-1/2 max-lg:w-4/5 rounded-xl shadow-lg shadow-gray-400">
+        <h2 class="text-3xl lg:text-4xl text-center font-semibold font-[Poppins] mb-4">¿Qué está pasando con nuestra vegetación?</h2>
+        <p>
+          En las últimas décadas, el avance de la minería y la tala indiscriminada han causado la pérdida de miles de hectáreas de vegetación nativa. Sin árboles, los suelos se degradan rápidamente, los arroyos pierden caudal y aumenta el riesgo de aludes y sequías. Además, se interrumpe el ciclo de vida de especies animales y vegetales propias del ecosistema catamarqueño.
+        </p>
+        <p>Acciones del proyecto:</p>
+        <ul class="pl-20 mt-2 max-md:pl-5 max-lg:pl-10">
+          <li class="list-disc pl-1">
+            Plantamos especies nativas adaptadas al ecosistema local (como molles, tuscas y algarrobos).
+          </li>
+          <li class="list-disc pl-1">
+            Trabajamos con voluntarios locales y escuelas rurales para promover la conciencia ambiental.
+          </li>
+          <li class="list-disc pl-1">
+            Implementamos cercos de protección para asegurar el crecimiento saludable de los árboles.
+          </li>
+          <li class="list-disc pl-1">
+            Realizamos monitoreo técnico del suelo y la supervivencia de las plantaciones.
+          </li>
+          <li class="list-disc pl-1">
+            Difundimos el proyecto con informes accesibles y actividades educativas.
+          </li>
+        </ul>
+      </div>
+      
+      <div class="bg-[#004f56] py-4 px-8 w-1/2 max-lg:w-4/5 rounded-xl shadow-lg shadow-gray-400">
+        <h2 class="text-3xl lg:text-4xl text-center font-semibold font-[Poppins] mb-4">¿Por qué donar?</h2>
+        <p>
+          Tu aporte permite comprar plantines nativos, herramientas y sistemas de riego por goteo. También financia talleres educativos, jornadas de plantación con comunidades rurales y el seguimiento técnico de los árboles plantados. Donar es plantar futuro: cada árbol que crece ayuda a regenerar el ecosistema y devuelve vida a zonas que hoy parecen olvidadas.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PAGINA -->
+  <footer class="py-2 bg-[#004f56] text-white font-[Poppins] flex flex-col">
+    <div class="grid grid-cols-2">
+
+      <!-- CONTACTO (Izquierda) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Contactos</h4>
+        <div>
+          <p class="max-md:text-sm">📞+54 383 555 1234</p>
+          <a href="mailto:contacto@alpha.org" class="hover:text-teal-500 transition-transform max-md:text-sm">📧 contacto@allpha.org</a>
+        </div>
+      </div>
+
+      <!-- REDES SOCIALES (Derecha) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Seguinos</h4>
+        <div class="flex md:justify-end gap-2 text-2xl">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="./img/iconos_redes/facebook.png" alt="Facebook" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="./img/iconos_redes/instagram.png" alt="Instagram" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://wa.me/543835551234" target="_blank" aria-label="WhatsApp">
+            <img src="./img/iconos_redes/whatsapp.png" alt="WhatsApp" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="mt-2 pt-1 text-center text-sm max-md:text-xs">
+      <p>© 2025 ONG Allpa Cardón | Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
