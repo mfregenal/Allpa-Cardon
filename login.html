@@ -6,7 +6,7 @@
   <title>Allpa Cardón</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
 
   <!-- ENCABEZADO -->
   <header class="font-[Poppins] text-[#004f56] text-lg lg:text-xl">
@@ -48,72 +48,47 @@
           <li>
             <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
           </li>
-          <li>
-            <a href="./login.html">
-              <img src="./img/login.png" alt="logo_perfil" class="w-8 hover:scale-110 max-lg:hidden">
-            </a>
-            <a href="./login.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642] lg:hidden">Iniciar sesión</a>
-          </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <!-- CUERPO DE LA PAGINA -->
-  <main class="font-[Open Sans] max-md:text-sm bg-[#fef6e4] text-white">
+  <!-- FORMULARIO - LOGIN -->
+  <main class="font-[Open Sans] max-md:text-sm bg-[url('./img/portada.png')] bg-cover flex items-center justify-center flex-grow">
+    <div class="bg-white p-7 rounded-2xl w-96 shadow-lg shadow-gray-400 mt-20 lg:mt-24 text-[#004f56]">
+      <h2 class="font-[Poppins] text-3xl mb-6 text-center">Iniciar sesión</h2>
+      <form action="#" class="space-y-4">
+        <div class="space-y-1">
+          <label for="email" class="font-semibold block">Correo electrónico:</label>
+          <input type="email" name="email" placeholder="ejemplo@allpa.org" class="w-full p-1 border-2 rounded-lg hover:border-teal-700 focus:outline-none focus:border-teal-700 text-black" required>
+        </div>
 
-    <!-- SECCIÓN ENCABEZADO -->
-    <section class="flex justify-center items-center bg-[url('./img/iniciativas/iniciativa_1.png')] h-[30rem] bg-cover bg-center mt-20 lg:mt-24">
-      <div class="flex flex-col items-center">
-        <h1 class="text-4xl lg:text-8xl text-center font-[Poppins] mb-6">AGUA PARA TODOS</h1>
-        <a
-          href="./pag_construccion.html"
-          class="bg-[#004f56] hover:bg-teal-600 hover:border-2 hover:border-teal-700 font-semibold py-2 px-6 rounded-xl transition inline-block mt-6">
-            Quiero donar
-        </a>
-      </div>
-    </section>
+        <div class="space-y-1">
+          <label for="password" class="font-semibold block">Contraseña:</label>
+          <input type="password" name="password" placeholder="********" minlength="8" class="w-full p-1 border-2 rounded-lg hover:border-teal-700 focus:outline-none focus:border-teal-700 text-black" required>
+        </div>
 
-    <!-- SECCIÓN: CUERPO DE LA INICIATIVA -->
-    <section class="flex flex-col items-center text-justify gap-6 py-6">
-      <div class="bg-[#004f56] py-4 px-8 w-1/2 max-lg:w-4/5 rounded-xl shadow-lg shadow-gray-400">
-        <h2 class="text-3xl lg:text-4xl text-center font-semibold font-[Poppins] mb-4">Un recurso vital bajo presión</h2>
-        <p>
-          El uso intensivo de agua por parte de las empresas mineras representa una de las principales amenazas para las fuentes hídricas de Catamarca. Ríos como el Río del Valle y arroyos ubicados en zonas sensibles como Antofagasta de la Sierra están siendo afectados por la extracción desmedida de este recurso vital. Estas aguas no solo sostienen los ecosistemas locales, sino que también son fundamentales para la vida de las comunidades que habitan en estas regiones. La disminución del caudal, la contaminación y la alteración del equilibrio natural comprometen tanto la biodiversidad como las prácticas ancestrales de cultivo y pastoreo que dependen del agua pura y disponible. Esta situación exige una mirada crítica y acciones urgentes para garantizar el derecho al agua de las generaciones presentes y futuras.
+        <button class="w-full p-1 bg-[#004f56] text-white rounded-lg cursor-pointer hover:bg-teal-600 border-2 border-transparent hover:border-teal-700">Ingresar</button>
+        <p class="mt-4 text-center">
+          ¿Olvidaste tu contraseña?
+          <a href="#" class="text-teal-500">Recuperar</a>
         </p>
-      </div>
+      </form>
+    </div>
 
-      <div class="bg-[#004f56] py-4 px-8 w-1/2 max-lg:w-4/5 rounded-xl shadow-lg shadow-gray-400">
-        <h2 class="text-3xl lg:text-4xl text-center font-semibold font-[Poppins] mb-4">¿Qué pasa con el agua?</h2>
-        <p>
-          La minería consume millones de litros al día, mientras pobladores de zonas como Antofagasta de la Sierra tienen acceso limitado a agua limpia. En muchos casos, los ríos bajan contaminados con metales como arsénico y plomo.
-          Lo que hacemos:
-        </p>
-        <p>Acciones del proyecto:</p>
-        <ul class="pl-20 mt-2 max-md:pl-5 max-lg:pl-10">
-          <li class="list-disc pl-1">
-            Instalamos medidores comunitarios de caudal y calidad.
-          </li>
-          <li class="list-disc pl-1">
-            Publicamos reportes en lenguaje claro.
-          </li>
-          <li class="list-disc pl-1">
-            Exigimos a las empresas el cumplimiento del derecho al agua.
-          </li>
-          <li class="list-disc pl-1">
-            Promovemos la cosecha de agua de lluvia.
-          </li>
-        </ul>
-      </div>
-      
-      <div class="bg-[#004f56] py-4 px-8 w-1/2 max-lg:w-4/5 rounded-xl shadow-lg shadow-gray-400">
-        <h2 class="text-3xl lg:text-4xl text-center font-semibold font-[Poppins] mb-4">¿Por qué donar?</h2>
-        <p>
-          Con tu aporte, no solo compramos un kit de análisis, le damos a una familia la prueba que necesita para proteger la salud de sus hijos. No solo sostenemos un monitoreo, generamos la evidencia para que la justicia actúe. Gracias a ti, las comunidades rurales no están solas en su lucha por el agua.
-        </p>
-      </div>
-    </section>
   </main>
+
+  <!-- .mensaje-ayuda {
+  font-size: 0.9em;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.mensaje-ayuda a {
+  color: #006d77;
+  text-decoration: none;
+} -->
+
 
   <!-- PIE DE PAGINA -->
   <footer class="py-2 bg-[#004f56] text-white font-[Poppins] flex flex-col">
