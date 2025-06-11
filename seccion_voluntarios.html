@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allpa Cardón</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="font-[Poppins] text-[#004f56] text-lg lg:text-xl">
+    <nav class="flex justify-between items-center px-5 lg:px-16 py-2 bg-[#fef6e4] fixed w-full top-0 shadow-md bg-opacity-90 shadow-gray-500">
+
+      <!-- LOGO -->
+      <div>
+        <img src="./img/logo.png" alt="logo_allpa_cardon" class="rounded-full w-20 max-lg:w-16">
+      </div>
+
+      <!-- MENU - ESCRITORIO Y MOBILE -->
+      <div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <label for="menu-toggle" class="flex flex-col gap-1 lg:hidden">
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+        </label>
+
+        <!-- MENU -->
+        <ul class="hidden max-lg:bg-[#fef6e4] max-lg:bg-opacity-90 peer-checked:flex lg:flex flex-col lg:flex-row max-lg:absolute max-lg:top-20 max-lg:w-full left-0 text-center py-1 max-lg:border-t-2 max-lg:border-[#004f5642] lg:gap-4 justify-center items-center">
+          <li>
+            <a href="./index.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Inicio</a>
+          </li>
+          <li>
+            <a href="./seccion_proyecto.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Proyectos</a>
+          </li>
+          <li>
+            <a href="./seccion_iniciativa.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Iniciativas</a>
+          </li>
+          <li>
+            <a href="./seccion_voluntarios.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Voluntarios</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Donaciones</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
+          </li>
+          <li>
+            <a href="./login.html">
+              <img src="./img/login.png" alt="logo_perfil" class="w-8 hover:scale-110 max-lg:hidden">
+            </a>
+            <a href="./login.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642] lg:hidden">Iniciar sesión</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CUERPO DE LA PAGINA -->
+  <main class="font-[Open Sans] max-md:text-sm bg-[#fef6e4]">
+
+    <!-- SECCIÓN ENCABEZADO -->
+    <section class="flex justify-center items-center bg-[url('./img/voluntarios/portada.png')] h-[30rem] bg-cover bg-center mt-20 lg:mt-24">
+      <div class="flex flex-col items-center">
+        <h1 class="text-4xl md:text-8xl font-[Poppins] text-white mb-6">VOLUNTARIOS</h1>
+        <a
+          href="./pag_construccion.html"
+          class="bg-[#004f56] hover:bg-teal-600 border-2 border-transparent hover:border-teal-700 text-white font-semibold py-2 px-6 rounded-xl transition inline-block mt-6">
+            Quiero postularme
+        </a>
+      </div>
+    </section>
+
+    <section class="flex flex-col justify-center items-center py-6 max-sm:p-2 md:px-14 mx-auto lg:w-3/5 gap-6">
+
+      <!-- INTRODUCCIÓN -->
+      <article class="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-2 overflow-hidden">
+        <div class="flex flex-col justify-center mb-4">
+          <h2 class="text-3xl md:text-4xl text-[#004f56] font-[Poppins]">
+            Ser parte de
+          </h2>
+          <h2 class="text-3xl md:text-4xl text-[#004f56] font-semibold font-[Poppins] max-sm:mb-4">
+            nuestro voluntariado
+          </h2>
+          <div class="space-y-4 text-gray-800 font-[Open Sans]">
+            <p>
+              Ser parte de nuestra ONG como voluntario/a significa comprometerse con la defensa de nuestro territorio, el agua y la vida. Es alzar la voz junto a comunidades que luchan por un futuro sustentable.
+            </p>
+            <p>
+              Es un espacio donde se construyen lazos solidarios, se aprende colectivamente y se fortalece el compromiso con el medio ambiente y nuestros derechos.
+            </p>
+            <p class="font-semibold text-[#004f56] mt-2">
+              ¡Nuestra labor y compromiso humanitario es transformar y mejorar realidades catamarqueñas!
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <img src="./img/voluntarios/voluntario_1.png" alt="voluntario_1" class="w-full h-full object-cover rounded-xl">
+        </div>
+      </article>
+
+      <!-- FORMULARIO DE REGISTRO -->
+      <article class="bg-[#004f56] w-full rounded-xl">
+        <h1>FORMULARIO</h1>
+      </article>
+
+      <!-- REQUISITOS -->
+      <article class="grid grid-cols-1 md:grid-cols-2 max-w-6xl w-full mx-auto md:space-x-6 overflow-hidden bg-white rounded-xl shadow-lg shadow-gray-400">
+        <div>
+          <img src="./img/voluntarios/voluntario_2.png" alt="voluntario_2" class="w-full h-80 object-cover rounded-xl">
+        </div>
+
+        <div class="flex flex-col justify-center mb-4 max-sm:p-2">
+          <h2 class="text-3xl lg:text-4xl text-[#004f56] font-[Poppins]">
+            Conoce los requisitos
+          </h2>
+          <h2 class="text-3xl lg:text-4xl text-[#004f56] font-[Poppins]  font-semibold">
+            para ser voluntario:
+          </h2>
+          <ul class="mt-4 lg:space-y-4 space-y-2 p-2">
+            <li class="list-disc ml-8">Ser mayor de 18 años de edad</li>
+            <li class="list-disc ml-8">Tener disponibilidad para participar en nuestras actividades</li>
+            <li class="list-disc ml-8">Compromiso con nuestra misión y la labor humanitaria</li>
+            <li class="list-disc ml-8">Flexibilidad y adaptabilidad</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- QUE OFRECEMOS -->
+      <article class="grid grid-cols-1 md:grid-cols-2 max-w-6xl w-full mx-auto md:pl-4 overflow-hidden bg-[#004f56] rounded-xl shadow-lg shadow-gray-400">
+        <div class="flex flex-col justify-center mb-4 text-white p-2">
+          <h2 class="text-3xl lg:text-4xl font-[Poppins]">
+            En Allpa Cardón
+          </h2>
+          <h2 class="text-3xl lg:text-4xl font-[Poppins]  font-semibold">
+            impulsamos:
+          </h2>
+          <ul class="mt-4 lg:space-y-4 space-y-2">
+            <li class="list-disc ml-8">Actividades con alto impacto</li>
+            <li class="list-disc ml-8">Capacitaciones permanentes asociadas a las tareas a desarrollar</li>
+            <li class="list-disc ml-8">Oportunidades para el desarrollo personal, técnico y profesional</li>
+            <li class="list-disc ml-8">Sentido de pertenencia e integración a un equipo</li>
+          </ul>
+        </div>
+
+        <div>
+          <img src="./img/voluntarios/voluntario_2.png" alt="voluntario_2" class="w-full h-80 object-cover rounded-xl">
+        </div>
+      </article>
+
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="flex flex-col justify-center items-center py-6 max-sm:p-2 md:px-14 mx-auto lg:w-3/5 space-y-6">
+      <h2 class="text-3xl md:text-4xl text-[#004f56] font-semibold font-[Poppins]">Testimonios</h2>
+
+      <!-- CONTENEDOR FILTRO -->
+      <div class="w-full flex items-center justify-between mb-6">
+        <h3 class="text-xl font-semibold text-[#004f56] font-[Poppins]">
+          Filtrar testimonios
+        </h3>
+
+        <!-- BOTÓN FILTRO -->
+        <div class="relative">
+          <input type="checkbox" id="toggle-menu" class="hidden peer"/>
+          <label for="toggle-menu" class="px-3 py-1 bg-[#004f56] text-white rounded-full cursor-pointer select-none whitespace-nowrap flex items-center gap-2">
+            Filtrar
+          </label>
+
+          <!-- MENU FILTRO -->
+          <div class="absolute right-0 mt-2 bg-white border border-gray-200 shadow-lg rounded-md w-40 text-sm text-left opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition-opacity duration-300 z-10">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Más recientes</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Más antiguos</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Destacados</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+
+        <!-- TESTIMONIO - 1 -->
+        <article  class="bg-white p-4 rounded-lg shadow-lg shadow-gray-300">
+          <div class="flex items-center mb-2">
+            <img src="img/testimonios/testimonio_1.jpg" alt="Gimena Ponce" class="w-16 h-16 rounded-full object-cover border-2 border-[#004f56]">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-[#004f56] font-[Poppins]">Gimena Ponce</h3>
+              <div class="text-yellow-400 text-lg">
+                ★★★★★ 
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 text-gray-700">
+            Doné porque confío en el trabajo transparente de la ONG. Saber que mi aporte ayuda a que el suelo catamarqueño afectado por el avance de la mineria recobre vida me llena de orgullo.
+          </p>
+        </article>
+
+        <!-- TESTIMONIO - 2 -->
+        <article  class="bg-white p-4 rounded-lg shadow-lg shadow-gray-300">
+          <div class="flex items-center mb-2">
+            <img src="img/testimonios/testimonio_2.jpg" alt="Marcelo Fregenal" class="w-16 h-16 rounded-full object-cover border-2 border-[#004f56]">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-[#004f56] font-[Poppins]">Marcelo Fregenal</h3>
+              <div class="text-yellow-400 text-lg">
+                ★★★★☆
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 text-gray-700">
+            Nuestro equipo hizo muestreos en la zona del Salar de Tres Quebradas. Preservar estas lagunas es vital para especies únicas que solo existen en Catamarca.
+          </p>
+        </article>
+
+        <!-- TESTIMONIO - 3 -->
+        <article  class="bg-white p-4 rounded-lg shadow-lg shadow-gray-300">
+          <div class="flex items-center mb-2">
+            <img src="img/testimonios/testimonio_3.jpg" alt="Maricruz Coello" class="w-16 h-16 rounded-full object-cover border-2 border-[#004f56]">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-[#004f56] font-[Poppins]">Maricruz Coello</h3>
+              <div class="text-yellow-400 text-lg">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 text-gray-700">
+            Ser voluntaria me cambió la vida. Enseñar a niños sobre el cuidado del agua me hizo entender la importancia de cada pequeña acción.
+          </p>
+        </article>
+
+        <!-- TESTIMONIO - 4 -->
+        <article  class="bg-white p-4 rounded-lg shadow-lg shadow-gray-300">
+          <div class="flex items-center mb-2">
+            <img src="img/testimonios/testimonio_4.jpg" alt="Natalia Funes" class="w-16 h-16 rounded-full object-cover border-2 border-[#004f56]">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-[#004f56] font-[Poppins]">Natalia Funes</h3>
+              <div class="text-yellow-400 text-lg">
+                ★★★★☆
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 text-gray-700">
+            Colaboré como veterinaria voluntaria en Andalgalá. Atendimos aves y zorros afectados por minería. Es gratificante darles otra oportunidad de vivir libres.
+          </p>
+        </article>
+
+        <!-- TESTIMONIO - 5 -->
+        <article  class="bg-white p-4 rounded-lg shadow-lg shadow-gray-300">
+          <div class="flex items-center mb-2">
+            <img src="img/testimonios/testimonio_5.jpg" alt="Luciana Ramallo" class="w-16 h-16 rounded-full object-cover border-2 border-[#004f56]">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-[#004f56] font-[Poppins]">Luciana Ramallo</h3>
+              <div class="text-yellow-400 text-lg">
+                ★★★★☆
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 text-gray-700">
+            Vimos cómo los animales volvían al monte después de los trabajos de rehabilitación. El centro de rescate no solo salva fauna, también devuelve esperanza a nuestra gente.
+          </p>
+        </article>
+
+        <!-- TESTIMONIO - 6 -->
+        <article  class="bg-white p-4 rounded-lg shadow-lg shadow-gray-300">
+          <div class="flex items-center mb-2">
+            <img src="img/testimonios/testimonio_6.jpg" alt="Jazmín Lara" class="w-16 h-16 rounded-full object-cover border-2 border-[#004f56]">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-[#004f56] font-[Poppins]">Jazmín Lara</h3>
+              <div class="text-yellow-400 text-lg">
+                ★★★★☆
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 text-gray-700">
+            Decidí aportar a Allpa Cardón porque me conmovió el impacto que tienen en la protección de las lagunas altoandinas. Saber que mi donación ayuda a preservar esos ecosistemas únicos me da una enorme satisfacción.
+          </p>
+        </article>
+
+        <!-- TESTIMONIO - 7 -->
+        <article  class="bg-white p-4 rounded-lg shadow-lg shadow-gray-300">
+          <div class="flex items-center mb-2">
+            <img src="img/testimonios/testimonio_7.jpg" alt="Brenda Navarro" class="w-16 h-16 rounded-full object-cover border-2 border-[#004f56]">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-[#004f56] font-[Poppins]">Brenda Navarro</h3>
+              <div class="text-yellow-400 text-lg">
+                ★★★★☆
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 text-gray-700">
+            Para nosotros, el agua es sagrada. El avance de la minería en Tres Quebradas amenaza nuestras fuentes y nuestra forma de vida ancestral. Defenderlas es defender quiénes somos.
+          </p>
+        </article>
+
+        <!-- TESTIMONIO - 8 -->
+        <article  class="bg-white p-4 rounded-lg shadow-lg shadow-gray-300">
+          <div class="flex items-center mb-2">
+            <img src="img/testimonios/testimonio_8.jpg" alt="Ana Quiroga" class="w-16 h-16 rounded-full object-cover border-2 border-[#004f56]">
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-[#004f56] font-[Poppins]">Ana Quiroga</h3>
+              <div class="text-yellow-400 text-lg">
+                ★☆☆☆☆
+              </div>
+            </div>
+          </div>
+          <p class="mt-2 text-gray-700">
+            Pésimo servicio.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PAGINA -->
+  <footer class="py-2 bg-[#004f56] text-white font-[Poppins] flex flex-col">
+    <div class="grid grid-cols-2">
+
+      <!-- CONTACTO (Izquierda) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Contactos</h4>
+        <div>
+          <p class="max-md:text-sm">📞+54 383 555 1234</p>
+          <a href="mailto:contacto@alpha.org" class="hover:text-teal-500 transition-transform max-md:text-sm">📧 contacto@allpha.org</a>
+        </div>
+      </div>
+
+      <!-- REDES SOCIALES (Derecha) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Seguinos</h4>
+        <div class="flex md:justify-end gap-2 text-2xl">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="./img/iconos_redes/facebook.png" alt="Facebook" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="./img/iconos_redes/instagram.png" alt="Instagram" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://wa.me/543835551234" target="_blank" aria-label="WhatsApp">
+            <img src="./img/iconos_redes/whatsapp.png" alt="WhatsApp" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="mt-2 pt-1 text-center text-sm max-md:text-xs">
+      <p>© 2025 ONG Allpa Cardón | Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
