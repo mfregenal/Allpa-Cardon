@@ -14,7 +14,9 @@
 
       <!-- LOGO -->
       <div>
-        <img src="./img/logo.png" alt="logo_allpa_cardon" class="rounded-full w-20 max-lg:w-16">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="logo_allpa_cardon" class="rounded-full w-16">
+        </a>
       </div>
 
       <!-- MENU - ESCRITORIO Y MOBILE -->
@@ -46,7 +48,7 @@
             <a href="./seccion_donaciones.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Donaciones</a>
           </li>
           <li>
-            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
+            <a href="./seccion_contacto.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
           </li>
           <li>
             <a href="./login.html">
@@ -63,17 +65,19 @@
   <main class="font-[Open Sans] max-md:text-sm bg-[#fef6e4]">
 
     <!-- SECCIÓN ENCABEZADO -->
-    <section class="flex justify-center items-center bg-[url('./img/donaciones/portada.png')] h-[30rem] bg-cover bg-center mt-20 lg:mt-24">
-      <div class="flex flex-col items-center text-white max-lg:text-center">
-        <h1 class="text-4xl md:text-6xl font-[Poppins] mb-6">Un futuro sostenible comienza hoy</h1>
-        <p class="text-lg lg:text-xl">
-          Apoya nuestros proyectos ambientales y de minería responsable. Tu ayuda cuenta.
-        </p>
-        <a
-          href="./pag_construccion.html"
-          class="bg-[#004f56] hover:bg-teal-600 border-2 border-transparent hover:border-teal-700 font-semibold py-2 px-6 rounded-xl transition inline-block mt-6">
-            Quiero donar
-        </a>
+    <section class="flex justify-center items-center bg-[url('./img/donaciones/portada.png')] h-[30rem] bg-cover bg-center mt-20">
+      <div class="flex justify-center items-center w-full h-full bg-black/20">
+        <div class="flex flex-col items-center text-white max-lg:text-center">
+          <h1 class="text-4xl md:text-6xl font-[Poppins] mb-6">Un futuro sostenible comienza hoy</h1>
+          <p class="text-lg lg:text-xl">
+            Apoya nuestros proyectos ambientales y de minería responsable. Tu ayuda cuenta.
+          </p>
+          <a
+            href="#donaciones"
+            class="bg-[#004f56] hover:bg-teal-600 border-2 border-transparent hover:border-teal-700 font-semibold py-2 px-6 rounded-xl transition inline-block mt-6">
+              Quiero donar
+          </a>
+        </div>
       </div>
     </section>
 
@@ -104,7 +108,7 @@
       </article>
 
       <!-- FORMULARIO DE REGISTRO -->
-      <article class="bg-[#004f56] w-full rounded-xl p-4 md:p-6">
+      <article id="donaciones" class="bg-[#004f56] w-full rounded-xl p-4 md:p-6">
         <div class="bg-white text-[#004f56] p-4 md:p-8 rounded-2xl w-full max-w-md shadow-xl mx-auto">
           <h2 class="text-xl md:text-3xl font-bold text-center mb-4 font-[Poppins]">
             Registrarse como donador

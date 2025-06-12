@@ -14,7 +14,9 @@
 
       <!-- LOGO -->
       <div>
-        <img src="./img/logo.png" alt="logo_allpa_cardon" class="rounded-full w-20 max-lg:w-16">
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="logo_allpa_cardon" class="rounded-full w-16">
+        </a>
       </div>
 
       <!-- MENU - ESCRITORIO Y MOBILE -->
@@ -46,7 +48,7 @@
             <a href="./seccion_donaciones.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Donaciones</a>
           </li>
           <li>
-            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
+            <a href="./seccion_contacto.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
           </li>
           <li>
             <a href="./login.html">
@@ -63,29 +65,28 @@
   <main class="font-[Open Sans] max-md:text-sm bg-[#fef6e4] text-white">
 
     <!-- SECCIÓN ENCABEZADO -->
-    <section class="flex justify-center mt-20 lg:mt-24">
-      <div class="flex flex-col items-center justify-center bg-[url('./img/iniciativas/portada.png')] w-full h-[30rem] bg-cover bg-center">
-
-        <!-- TEXTO ENCABEZADO -->
-        <h1 class="text-4xl md:text-8xl font-[Poppins]">INICIATIVAS</h1>
-        <p class="md:text-xl mt-4 mb-4">Nuestras iniciativas ambientales en Catamarca</p>
-
-        <!-- BARRA DE BÚSQUEDA - ESCRITORIO -->
-        <form action="#" class="flex max-md:flex-col items-center justify-center gap-2 mt-4 max-md:hidden">
-          <label for="buscar" class="font-semibold">Buscar iniciativa:</label>
-          <input type="text" id="buscar" name="buscar" class="border border-white rounded-md px-4 py-1 w-80 focus:outline-none focus:ring-2 focus:ring-[#006d77] placeholder:text-white bg-transparent" placeholder="Escribí el nombre de la iniciativa">
-            <button type="submit" class=" px-2 py-1 rounded-md hover:bg-[#006d77]">
-              <img src="./img/icono_lupa.png" alt="icono_lupa" class="w-6 h-6">
-            </button>
-        </form>
-
-        <!-- BARRA BÚSQUEDA - MOBILE -->
-        <form action="#" class="flex max-md:flex-col items-center justify-center gap-2 mt-4 md:hidden">
-          <label for="buscar" class="font-semibold">Buscar iniciativa:</label>
-          <input type="text" id="buscar" name="buscar"
-            class="border border-white rounded-md px-4 py-1 w-80 focus:outline-none focus:ring-2 focus:ring-[#006d77] placeholder:text-white bg-transparent"
-            placeholder="Escribí el nombre de la iniciativa ">
-        </form>
+    <section class="flex justify-center mt-20">
+      <div class="flex justify-center items-center w-full h-full bg-black/30">
+        <div class="flex flex-col items-center justify-center bg-[url('./img/iniciativas/portada.png')] w-full h-[30rem] bg-cover bg-center">
+          <!-- TEXTO ENCABEZADO -->
+          <h1 class="text-4xl md:text-8xl font-[Poppins]">INICIATIVAS</h1>
+          <p class="md:text-xl mt-4 mb-4">Nuestras iniciativas ambientales en Catamarca</p>
+          <!-- BARRA DE BÚSQUEDA - ESCRITORIO -->
+          <form action="#" class="flex max-md:flex-col items-center justify-center gap-2 mt-4 max-md:hidden">
+            <label for="buscar" class="font-semibold">Buscar iniciativa:</label>
+            <input type="text" id="buscar" name="buscar" class="border border-white rounded-md px-4 py-1 w-80 focus:outline-none focus:ring-2 focus:ring-[#006d77] placeholder:text-white bg-transparent" placeholder="Escribí el nombre de la iniciativa">
+              <button type="submit" class=" px-2 py-1 rounded-md hover:bg-[#006d77]">
+                <img src="./img/icono_lupa.png" alt="icono_lupa" class="w-6 h-6">
+              </button>
+          </form>
+          <!-- BARRA BÚSQUEDA - MOBILE -->
+          <form action="#" class="flex max-md:flex-col items-center justify-center gap-2 mt-4 md:hidden">
+            <label for="buscar" class="font-semibold">Buscar iniciativa:</label>
+            <input type="text" id="buscar" name="buscar"
+              class="border border-white rounded-md px-4 py-1 w-80 focus:outline-none focus:ring-2 focus:ring-[#006d77] placeholder:text-white bg-transparent"
+              placeholder="Escribí el nombre de la iniciativa ">
+          </form>
+        </div>
       </div>
     </section>
 

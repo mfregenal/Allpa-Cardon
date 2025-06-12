@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allpa Cardón</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col h-screen">
+
+  <!-- ENCABEZADO -->
+  <header class="font-[Poppins] text-[#004f56] text-lg lg:text-xl">
+    <nav class="flex justify-between items-center px-5 lg:px-16 py-2 bg-[#fef6e4] fixed w-full top-0 shadow-md bg-opacity-90 shadow-gray-500">
+
+      <!-- LOGO -->
+      <div>
+        <a href="./index.html">
+          <img src="./img/logo.png" alt="logo_allpa_cardon" class="rounded-full w-16">
+        </a>
+      </div>
+
+      <!-- MENU - ESCRITORIO Y MOBILE -->
+      <div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <label for="menu-toggle" class="flex flex-col gap-1 lg:hidden">
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+        </label>
+
+        <!-- MENU -->
+        <ul class="hidden max-lg:bg-[#fef6e4] max-lg:bg-opacity-90 peer-checked:flex lg:flex flex-col lg:flex-row max-lg:absolute max-lg:top-20 max-lg:w-full left-0 text-center py-1 max-lg:border-t-2 max-lg:border-[#004f5642] lg:gap-4 justify-center items-center">
+          <li>
+            <a href="./index.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Inicio</a>
+          </li>
+          <li>
+            <a href="./seccion_proyecto.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Proyectos</a>
+          </li>
+          <li>
+            <a href="./seccion_iniciativa.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Iniciativas</a>
+          </li>
+          <li>
+            <a href="./seccion_voluntarios.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Voluntarios</a>
+          </li>
+          <li>
+            <a href="./seccion_donaciones.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Donaciones</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
+          </li>
+          <li>
+            <a href="./login.html">
+              <img src="./img/login.png" alt="logo_perfil" class="w-8 hover:scale-110 max-lg:hidden">
+            </a>
+            <a href="./login.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642] lg:hidden">Iniciar sesión</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CUERPO DE LA PAGINA -->
+  <main class="font-[Open Sans] max-md:text-sm bg-[#fef6e4] flex-grow">
+    <section class="flex flex-col items-center justify-center bg-[url('./img/contacto.png')] bg-cover bg-center h-full py-28 text-white">
+      <div class="flex flex-col justify-center items-center bg-black/30 rounded-xl p-4 max-md:w-11/12">
+
+        <!-- TEXTO -->
+        <div class="text-center mb-6 max-md:w-full">
+          <h2 class="text-3xl md:text-4xl font-semibold font-[Poppins]" >CONTÁCTANOS</h2>
+          <p>Completa este formulario para ponerte en contacto con nuestra ONG</p>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="md:w-96 bg-white/60 p-6 rounded-xl max-md:w-full">
+          <form class="space-y-4 text-[#006d77]">
+
+            <!-- NOMBRE COMPLETO -->
+            <div class="space-y-2">
+              <label for="nombre" class="block font-bold">Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre" required class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+
+            <!-- NUMERO DE TELÉFONO -->
+            <div class="space-y-2">
+              <label for="nombre" class="block font-bold">Número de teléfono</label>
+              <input type="text" id="num" name="num" required class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+
+            <!-- CORREO -->
+            <div class="space-y-2">
+              <label for="email" class="block font-bold">Correo electrónico</label>
+              <input type="email" name="email" required class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+
+            <!-- MOTIVO DE CONTACTO -->
+            <div class="space-y-2">
+              <label for="motivo" class="block font-bold">Motivo del contacto</label>
+              <select id="motivo" name="motivo" required class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+                <option value="">Seleccioná una opción</option>
+                <option value="voluntariado">Duda sobre voluntariado</option>
+                <option value="tecnico">Problema técnico</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <!-- MENSAJE -->
+            <div class="space-y-2">
+              <label for="mensaje" class="block  font-bold">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30"></textarea>
+            </div>
+
+            <!-- BOTÓN -->
+            <div class="text-center">
+              <button type="submit" class="bg-[#006d77] text-white font-semibold py-2 px-6 rounded-lg cursor-pointer hover:bg-teal-600 border-2 border-transparent hover:border-teal-700 transition-all duration-300 ease-in-out">
+                Enviar mensaje
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PAGINA -->
+  <footer class="py-2 bg-[#004f56] text-white font-[Poppins] flex flex-col">
+    <div class="grid grid-cols-2">
+
+      <!-- CONTACTO (Izquierda) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Contactos</h4>
+        <div>
+          <p class="max-md:text-sm">📞+54 383 555 1234</p>
+          <a href="mailto:contacto@alpha.org" class="hover:text-teal-500 transition-transform max-md:text-sm">📧 contacto@allpha.org</a>
+        </div>
+      </div>
+
+      <!-- REDES SOCIALES (Derecha) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Seguinos</h4>
+        <div class="flex md:justify-end gap-2 text-2xl">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="./img/iconos_redes/facebook.png" alt="Facebook" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="./img/iconos_redes/instagram.png" alt="Instagram" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://wa.me/543835551234" target="_blank" aria-label="WhatsApp">
+            <img src="./img/iconos_redes/whatsapp.png" alt="WhatsApp" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="mt-2 pt-1 text-center text-sm max-md:text-xs">
+      <p>© 2025 ONG Allpa Cardón | Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
