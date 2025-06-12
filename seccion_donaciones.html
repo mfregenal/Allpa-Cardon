@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allpa Cardón</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="font-[Poppins] text-[#004f56] text-lg lg:text-xl">
+    <nav class="flex justify-between items-center px-5 lg:px-16 py-2 bg-[#fef6e4] fixed w-full top-0 shadow-md bg-opacity-90 shadow-gray-500">
+
+      <!-- LOGO -->
+      <div>
+        <img src="./img/logo.png" alt="logo_allpa_cardon" class="rounded-full w-20 max-lg:w-16">
+      </div>
+
+      <!-- MENU - ESCRITORIO Y MOBILE -->
+      <div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <label for="menu-toggle" class="flex flex-col gap-1 lg:hidden">
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+          <div class="w-6 h-1 bg-[#004f56] rounded-xl"></div>
+        </label>
+
+        <!-- MENU -->
+        <ul class="hidden max-lg:bg-[#fef6e4] max-lg:bg-opacity-90 peer-checked:flex lg:flex flex-col lg:flex-row max-lg:absolute max-lg:top-20 max-lg:w-full left-0 text-center py-1 max-lg:border-t-2 max-lg:border-[#004f5642] lg:gap-4 justify-center items-center">
+          <li>
+            <a href="./index.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Inicio</a>
+          </li>
+          <li>
+            <a href="./seccion_proyecto.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Proyectos</a>
+          </li>
+          <li>
+            <a href="./seccion_iniciativa.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Iniciativas</a>
+          </li>
+          <li>
+            <a href="./seccion_voluntarios.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Voluntarios</a>
+          </li>
+          <li>
+            <a href="./seccion_donaciones.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Donaciones</a>
+          </li>
+          <li>
+            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
+          </li>
+          <li>
+            <a href="./login.html">
+              <img src="./img/login.png" alt="logo_perfil" class="w-8 hover:scale-110 max-lg:hidden">
+            </a>
+            <a href="./login.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642] lg:hidden">Iniciar sesión</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CUERPO DE LA PAGINA -->
+  <main class="font-[Open Sans] max-md:text-sm bg-[#fef6e4]">
+
+    <!-- SECCIÓN ENCABEZADO -->
+    <section class="flex justify-center items-center bg-[url('./img/donaciones/portada.png')] h-[30rem] bg-cover bg-center mt-20 lg:mt-24">
+      <div class="flex flex-col items-center text-white max-lg:text-center">
+        <h1 class="text-4xl md:text-6xl font-[Poppins] mb-6">Un futuro sostenible comienza hoy</h1>
+        <p class="text-lg lg:text-xl">
+          Apoya nuestros proyectos ambientales y de minería responsable. Tu ayuda cuenta.
+        </p>
+        <a
+          href="./pag_construccion.html"
+          class="bg-[#004f56] hover:bg-teal-600 border-2 border-transparent hover:border-teal-700 font-semibold py-2 px-6 rounded-xl transition inline-block mt-6">
+            Quiero donar
+        </a>
+      </div>
+    </section>
+
+    <section class="flex flex-col justify-center items-center py-6 max-sm:p-2 md:px-14 mx-auto lg:w-3/5 gap-6">
+
+      <!-- INTRODUCCIÓN -->
+      <article class="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-2 overflow-hidden">
+        <div class="flex flex-col justify-center mb-4">
+          <h2 class="text-3xl md:text-4xl text-[#004f56] font-[Poppins] mb-2">
+            Tu donación <strong class="block">nuestro motor</strong>
+          </h2>
+          <div class="space-y-4 text-gray-800 font-[Open Sans]">
+            <p>
+              Tu donación a nuestra ONG es mucho más que un aporte económico; es un acto de compromiso con la tierra que habitamos. Significa confiar en que es posible defender nuestro territorio, proteger el agua y asegurar la vida para las generaciones futuras.
+            </p>
+            <p>
+              Cada peso que recibimos se convierte en acción concreta. Es la herramienta que nos permite financiar proyectos de reforestación, brindar talleres de educación ambiental y fortalecer a las comunidades que defienden activamente un futuro sustentable.
+            </p>
+            <p class="font-semibold text-[#004f56] mt-2">
+              ¡Tu generosidad es la fuerza que nos permite seguir transformando y mejorando las realidades catamarqueñas!
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <img src="./img/donaciones/donaciones_1.png" alt="donaciones_1" class="w-full h-full object-cover rounded-xl">
+        </div>
+      </article>
+
+      <!-- FORMULARIO DE REGISTRO -->
+      <article class="bg-[#004f56] w-full rounded-xl p-4 md:p-6">
+        <div class="bg-white text-[#004f56] p-4 md:p-8 rounded-2xl w-full max-w-md shadow-xl mx-auto">
+          <h2 class="text-xl md:text-3xl font-bold text-center mb-4 font-[Poppins]">
+            Registrarse como donador
+          </h2>
+          <form class="space-y-4">
+            <div>
+              <label for="nombre" class="block text-sm font-medium text-gray-600 mb-1">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required
+                class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+
+            <div>
+              <label for="fecha" class="block text-sm font-medium text-gray-600 mb-1">Fecha de nacimiento</label>
+              <input type="text" id="fecha" name="fecha" required placeholder="dd/mm/aaaa"
+                class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+
+            <div>
+              <label for="num" class="block text-sm font-medium text-gray-600 mb-1">Número de teléfono</label>
+              <input type="text" id="num" name="num" required placeholder="+54 9 3834 232658"
+                class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Correo electrónico</label>
+              <input type="email" name="email" placeholder="tu.correo@ejemplo.com" required 
+                class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+            
+            <div>
+              <label for="password" class="block text-sm font-medium text-gray-600 mb-1">Contraseña</label>
+              <input type="password" name="password" placeholder="Mínimo 8 caracteres" minlength="8" required
+                class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+
+            <button class="w-full py-2 mt-8 font-semibold text-white rounded-lg cursor-pointer bg-[#004f56] hover:bg-teal-600 border-2 border-transparent hover:border-teal-700 transition-all duration-300 ease-in-out">
+              Crear mi Cuenta
+            </button>
+            <p class="mt-6 text-center text-sm text-gray-600"> ¿Ya tienes una cuenta?
+              <a href="#" class="font-medium text-teal-600 hover:text-teal-500 hover:underline transition duration-200">
+                Ingresar ahora
+              </a>
+            </p>
+          </form>
+        </div>
+      </article>
+
+      <!-- MEDIO AMBIENTE -->
+      <article class="grid grid-cols-1 md:grid-cols-2 max-w-6xl w-full mx-auto md:space-x-6 overflow-hidden bg-white rounded-xl shadow-lg shadow-gray-400">
+        <div>
+          <img src="./img/donaciones/donaciones_2.png" alt="donaciones_2" class="w-full h-80 object-cover rounded-xl">
+        </div>
+
+        <div class="flex flex-col justify-center mb-4 max-sm:p-2">
+          <h2 class="text-3xl lg:text-4xl text-[#004f56] font-[Poppins] mb-2">
+            Protección del <strong class="block">medio ambiente</strong>
+          </h2>
+          <p>
+            Tus aportes se destinan a proyectos de reforestación, conservación de biodiversidad, educación ambiental y limpieza de ríos. Colaboramos con comunidades locales para implementar prácticas sostenibles que reduzcan la huella ecológica.
+          </p>
+        </div>
+      </article>
+
+      <!-- MINERÍA -->
+      <article class="grid grid-cols-1 md:grid-cols-2 max-w-6xl w-full mx-auto md:pl-4 overflow-hidden bg-[#004f56] rounded-xl shadow-lg shadow-gray-400 mb-4">
+        <div class="flex flex-col justify-center mb-4 text-white p-2">
+          <h2 class="text-3xl lg:text-4xl font-[Poppins] mb-2">
+            Minería responsable <strong class="block">y sostenible</strong>
+          </h2>
+          <p>
+            Apoyamos iniciativas que promueven una minería más limpia y ética, fomentando tecnologías menos invasivas y combatiendo la minería ilegal. También capacitamos a comunidades afectadas para diversificar su economía.
+          </p>
+        </div>
+
+        <div>
+          <img src="./img/donaciones/donaciones_3.png" alt="donaciones_3" class="w-full h-80 object-cover rounded-xl">
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- PIE DE PAGINA -->
+  <footer class="py-2 bg-[#004f56] text-white font-[Poppins] flex flex-col">
+    <div class="grid grid-cols-2">
+
+      <!-- CONTACTO (Izquierda) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Contactos</h4>
+        <div>
+          <p class="max-md:text-sm">📞+54 383 555 1234</p>
+          <a href="mailto:contacto@alpha.org" class="hover:text-teal-500 transition-transform max-md:text-sm">📧 contacto@allpha.org</a>
+        </div>
+      </div>
+
+      <!-- REDES SOCIALES (Derecha) -->
+      <div class="grid grid-rows-2 justify-center items-center">
+        <h4 class="text-xl max-md:text-base uppercase text-center">Seguinos</h4>
+        <div class="flex md:justify-end gap-2 text-2xl">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="./img/iconos_redes/facebook.png" alt="Facebook" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="./img/iconos_redes/instagram.png" alt="Instagram" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+          <a href="https://wa.me/543835551234" target="_blank" aria-label="WhatsApp">
+            <img src="./img/iconos_redes/whatsapp.png" alt="WhatsApp" class="w-8 h-8 max-md:w-6 max-md:h-6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="mt-2 pt-1 text-center text-sm max-md:text-xs">
+      <p>© 2025 ONG Allpa Cardón | Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

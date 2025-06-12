@@ -43,7 +43,7 @@
             <a href="./seccion_voluntarios.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Voluntarios</a>
           </li>
           <li>
-            <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Donaciones</a>
+            <a href="./seccion_donaciones.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Donaciones</a>
           </li>
           <li>
             <a href="./pag_construccion.html" class="hover:text-teal-600 hover:scale-110 inline-block max-lg:border-b-2 max-lg:border-[#004f5642]">Contacto</a>
@@ -79,11 +79,8 @@
       <!-- INTRODUCCIÓN -->
       <article class="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-2 overflow-hidden">
         <div class="flex flex-col justify-center mb-4">
-          <h2 class="text-3xl md:text-4xl text-[#004f56] font-[Poppins]">
-            Ser parte de
-          </h2>
-          <h2 class="text-3xl md:text-4xl text-[#004f56] font-semibold font-[Poppins] max-sm:mb-4">
-            nuestro voluntariado
+          <h2 class="text-3xl md:text-4xl text-[#004f56] font-[Poppins] mb-2">
+            Sé parte de <strong class="block">nuestro voluntariado</strong>
           </h2>
           <div class="space-y-4 text-gray-800 font-[Open Sans]">
             <p>
@@ -104,8 +101,52 @@
       </article>
 
       <!-- FORMULARIO DE REGISTRO -->
-      <article class="bg-[#004f56] w-full rounded-xl">
-        <h1>FORMULARIO</h1>
+      <article class="bg-[#004f56] w-full rounded-xl p-4 md:p-6">
+        <div class="bg-white text-[#004f56] p-4 md:p-8 rounded-2xl w-full max-w-md shadow-xl mx-auto">
+          <h2 class="text-xl md:text-3xl font-bold text-center mb-4 font-[Poppins]">
+            Registrarse como voluntario
+          </h2>
+          <form class="space-y-4">
+            <div>
+              <label for="nombre" class="block text-sm font-medium text-gray-600 mb-1">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required
+                class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+
+            <div>
+              <label for="fecha" class="block text-sm font-medium text-gray-600 mb-1">Fecha de nacimiento</label>
+              <input type="text" id="fecha" name="fecha" required placeholder="dd/mm/aaaa"
+                class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+
+            <div>
+              <label for="num" class="block text-sm font-medium text-gray-600 mb-1">Número de teléfono</label>
+              <input type="text" id="num" name="num" required placeholder="+54 9 3834 232658"
+                class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Correo electrónico</label>
+              <input type="email" name="email" placeholder="tu.correo@ejemplo.com" required 
+                class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+            
+            <div>
+              <label for="password" class="block text-sm font-medium text-gray-600 mb-1">Contraseña</label>
+              <input type="password" name="password" placeholder="Mínimo 8 caracteres" minlength="8" required
+                class="w-full p-1 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/30">
+            </div>
+
+            <button class="w-full py-2 mt-8 font-semibold text-white rounded-lg cursor-pointer bg-[#004f56] hover:bg-teal-600 border-2 border-transparent hover:border-teal-700 transition-all duration-300 ease-in-out">
+              Crear mi Cuenta
+            </button>
+            <p class="mt-6 text-center text-sm text-gray-600"> ¿Ya tienes una cuenta?
+              <a href="#" class="font-medium text-teal-600 hover:text-teal-500 hover:underline transition duration-200">
+                Ingresar ahora
+              </a>
+            </p>
+          </form>
+        </div>
       </article>
 
       <!-- REQUISITOS -->
@@ -116,15 +157,12 @@
 
         <div class="flex flex-col justify-center mb-4 max-sm:p-2">
           <h2 class="text-3xl lg:text-4xl text-[#004f56] font-[Poppins]">
-            Conoce los requisitos
-          </h2>
-          <h2 class="text-3xl lg:text-4xl text-[#004f56] font-[Poppins]  font-semibold">
-            para ser voluntario:
+            Conoce los requisitos <strong class="block">para ser voluntario:</strong>
           </h2>
           <ul class="mt-4 lg:space-y-4 space-y-2 p-2">
             <li class="list-disc ml-8">Ser mayor de 18 años de edad</li>
             <li class="list-disc ml-8">Tener disponibilidad para participar en nuestras actividades</li>
-            <li class="list-disc ml-8">Compromiso con nuestra misión y la labor humanitaria</li>
+            <li class="list-disc ml-8">Compromiso con nuestra misión y labor humanitaria</li>
             <li class="list-disc ml-8">Flexibilidad y adaptabilidad</li>
           </ul>
         </div>
@@ -134,13 +172,10 @@
       <article class="grid grid-cols-1 md:grid-cols-2 max-w-6xl w-full mx-auto md:pl-4 overflow-hidden bg-[#004f56] rounded-xl shadow-lg shadow-gray-400">
         <div class="flex flex-col justify-center mb-4 text-white p-2">
           <h2 class="text-3xl lg:text-4xl font-[Poppins]">
-            En Allpa Cardón
-          </h2>
-          <h2 class="text-3xl lg:text-4xl font-[Poppins]  font-semibold">
-            impulsamos:
+            En Allpa Cardón <strong class="block">impulsamos:</strong>
           </h2>
           <ul class="mt-4 lg:space-y-4 space-y-2">
-            <li class="list-disc ml-8">Actividades con alto impacto</li>
+            <li class="list-disc ml-8">Actividades con alto impacto social, ambiental y humanitario</li>
             <li class="list-disc ml-8">Capacitaciones permanentes asociadas a las tareas a desarrollar</li>
             <li class="list-disc ml-8">Oportunidades para el desarrollo personal, técnico y profesional</li>
             <li class="list-disc ml-8">Sentido de pertenencia e integración a un equipo</li>
@@ -148,10 +183,9 @@
         </div>
 
         <div>
-          <img src="./img/voluntarios/voluntario_2.png" alt="voluntario_2" class="w-full h-80 object-cover rounded-xl">
+          <img src="./img/voluntarios/voluntario_3.png" alt="voluntario_3" class="w-full h-80 object-cover rounded-xl">
         </div>
       </article>
-
     </section>
 
     <!-- TESTIMONIOS -->
@@ -194,7 +228,7 @@
             </div>
           </div>
           <p class="mt-2 text-gray-700">
-            Doné porque confío en el trabajo transparente de la ONG. Saber que mi aporte ayuda a que el suelo catamarqueño afectado por el avance de la mineria recobre vida me llena de orgullo.
+            Tuve la oportunidad de realizar un voluntariado en Allpa Cardón y la experiencia fue realmente enriquecedora, compartí momentos únicos con personas increíbles que forman parte del proyecto.
           </p>
         </article>
 
@@ -274,7 +308,7 @@
             </div>
           </div>
           <p class="mt-2 text-gray-700">
-            Decidí aportar a Allpa Cardón porque me conmovió el impacto que tienen en la protección de las lagunas altoandinas. Saber que mi donación ayuda a preservar esos ecosistemas únicos me da una enorme satisfacción.
+            Monitorear como voluntaria las lagunas altoandinas fue conmovedor. Ver de cerca su fragilidad y saber que mi esfuerzo ayudaba a protegerlas me dio una satisfacción enorme. Son un tesoro que debemos cuidar.
           </p>
         </article>
 
